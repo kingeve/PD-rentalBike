@@ -37,6 +37,7 @@ function predict() {
       console.log(err);
       return;
     }
+    const targetActive = results[0].RentedBikeCounted.toFixed(0);
     // descript.innerHTML+=targetActive;
     descript.innerHTML+="<br><br>"+"Hour: " + inputs.Hour;
     descript.innerHTML+="<br><br>"+"Temperature: " + inputs.Temperature + "°C";
@@ -47,7 +48,16 @@ function predict() {
     descript.innerHTML+="<br><br>"+"Functioning Day: " + inputs.FunctioningDay;
 
     
-    
+    if (targetActive < 1000) {
+      descript.innerHTML += "<br><br><b>"+"There are enough bikes for rent.</b>";
+      descript.style.backgroundColor = "green";
+    } else if (targetActive>1000 && targetActive <2000){
+      descript.innerHTML += "<br><br><b>"+"You must hurry. The bike could rent out soon.</b>";
+      descript.style.backgroundColor = "yellow";
+    } else {
+      descript.innerHTML += "<br><br><b>"+"Only few bikes are left. It is possible that you cannot rent one.<b>";
+      descript.style.backgroundColor = "red";
+    }
     
     console.log(results[0]);
     rentalBikes.innerHTML = results[0].value.toFixed(0);
