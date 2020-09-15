@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body {
+    margin: 0;
+    padding: 10;
+    min-height: 100vh;
+  }
+  /* Hieronder mag je eigen CSS code */
+ body {  
+    margin:100px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEEEEE;
+    }
