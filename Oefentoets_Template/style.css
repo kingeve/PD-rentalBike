@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body {
+    margin: 0;
+    padding: 10;
+    min-height: 100vh;
+  }
+  /* Hieronder mag je eigen CSS code */
+body {  
+  display: grid;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #EEEEEE;
+
+  }
+
+.hidden {
+  display: none;
+}
+#title {
+    background-color: #a3a1a179;
+
+  }
+  #graph{
+    background-color:yellowgreen;
+
+  }
+  #description {
+    background-color: #6088a879;
+
+  }
+  #text {
+    background-color: #ffae0079;
+
+  }
+ #sliderBox{
+    position:relative;
+    border: 3px solid black;
+    margin: 50px auto auto auto;
+    width:56px;
+    height:600px;
+   }
+#slider{
+  position: absolute;
+  background-color: tomato;
+  bottom: 0;
+  left:0;
+  width: 50px;
+  height: 1px;
+  } 
+
