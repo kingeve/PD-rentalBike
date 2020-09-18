@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,36 @@
     <link rel="stylesheet" href="style.css">
     <title>Rental bike demand</title>
 </head>
+
 <body>
     <div id="title">
-        <p>Today's expected rental bike demand is</p> 
+        <p>Today's expected rental bike demand is</p>
         <p id="rentalBikes"></p>
-        <p>The Maximum rental bike is 3556</p> 
+        <p>The Maximum rental bike is 3556.</p>
     </div>
     <div id="graph">
-        
+
         <div id="sliderBox">
             <div id="slider">slider</div>
-    </div> </div>
-
-    <div id="description">
-        
+        </div>
     </div>
 
+    <div id="description">
+    </div>
+    <div id ="text">
+    <div id="content"></div>
+    <div class="hidden" id="enough"><br>There are a number of bikes for rent.<br>
+    </div>
+    <div class="hidden" id="stillEnough"><br>There are still enough bikes now. <br>
+    </div>
+    <div class="hidden" id="onlyFew"><br>Only few bikes left. You must hurry.<br>
+    </div>
+</div>
   
 
+
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>

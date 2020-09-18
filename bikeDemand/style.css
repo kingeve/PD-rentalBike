@@ -15,13 +15,16 @@ body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   background-color: #EEEEEE;
-  grid-template-rows: 20vh 80vh;
+  grid-template-rows: 20vh 40vh 40vh;
   grid-template-columns: 50vw 50vw;
   }
 form{
   align-items: center;
   /* margin:100px; */
   /* line-height: 20px; */
+}
+.hidden {
+  display: none;
 }
 #title {
     background-color: #a3a1a179;
@@ -30,12 +33,17 @@ form{
   }
   #graph{
     background-color:yellowgreen;
-    grid-row:2/3;
+    grid-row:2/4;
     grid-column:1/2;
   }
   #description {
     background-color: #6088a879;
       grid-row: 2/3;
+      grid-column: 2/3;
+  }
+  #text {
+    background-color: #ffae0079;
+      grid-row: 3/4;
       grid-column: 2/3;
   }
  #sliderBox{
