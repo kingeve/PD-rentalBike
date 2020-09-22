@@ -1,4 +1,4 @@
-var urlParams = new URLSearchParams(window.location.search);
+var parameters = new URLSearchParams(window.location.search);
 var rentalBikes = document.querySelector("#rentalBikes");
 var slider = document.querySelector("#slider");
 var descript = document.querySelector("#description");
@@ -22,13 +22,13 @@ var neuralNetwork = ml5.neuralNetwork(options);
 neuralNetwork.load(modelDetails, predict);
 
 var inputs = {
-  Hour: parseInt(urlParams.get('day')),
-  TemperatureC: parseFloat(urlParams.get('tmp')),
-  Humidity: parseInt(urlParams.get('hmd')),
-  WindSpeed: parseFloat(urlParams.get('wind')),
-  Seasons:  parseInt(urlParams.get('ssn')),
-  Holiday:  parseInt(urlParams.get('hld')),
-  FunctioningDay: parseInt(urlParams.get('fcd'))
+  Hour: parseInt(parameters.get('day')),
+  TemperatureC: parseFloat(parameters.get('tmp')),
+  Humidity: parseInt(parameters.get('hmd')),
+  WindSpeed: parseFloat(parameters.get('wind')),
+  Seasons:  parseInt(parameters.get('ssn')),
+  Holiday:  parseInt(parameters.get('hld')),
+  FunctioningDay: parseInt(parameters.get('fcd'))
 }
 
 console.log(inputs);
