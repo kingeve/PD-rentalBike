@@ -1,4 +1,4 @@
-var urlParams = new URLSearchParams(window.location.search);
+var parameters = new URLSearchParams(window.location.search);
 var rentalBikes = document.querySelector("#rentalBikes");
 
 var options = {
