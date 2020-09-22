@@ -2,7 +2,6 @@ var parameters = new URLSearchParams(window.location.search);
 var rentalBikes = document.querySelector("#rentalBikes");
 var slider = document.querySelector("#slider");
 var descript = document.querySelector("#description");
-var content = document.querySelector("#content");
 var enough=document.querySelector("#enough");
 var stillEnough=document.querySelector("#stillEnough");
 var onlyFew=document.querySelector("#onlyFew");
@@ -50,15 +49,15 @@ function predict() {
     descript.innerHTML+="<br><br>"+"Holiday: " + inputs.Holiday;
     descript.innerHTML+="<br><br>"+"Functioning Day: " + inputs.FunctioningDay;
 
-    content.classList.add('hidden');
+  
     if (targetActive < 1000) {
-      enough.classList.remove('hidden');
+      enough.style.display = "block";
       descript.style.backgroundColor = "green";
     } else if (targetActive>1000 && targetActive <3000){
-      stillEnough.classList.remove('hidden');
+      stillEnough.style.display = "block";
       descript.style.backgroundColor = "yellow";
     } else {
-      onlyFew.classList.remove('hidden');
+      onlyFew.style.display = "block";
       descript.style.backgroundColor = "red";
     }
     
