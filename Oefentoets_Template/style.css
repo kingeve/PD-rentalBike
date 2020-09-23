@@ -18,6 +18,10 @@ body {
 
   }
 
+#classIndex{
+  display: block;
+}
+
 .hidden {
   display: none;
 }
