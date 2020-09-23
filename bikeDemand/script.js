@@ -7,7 +7,6 @@ var stillEnough=document.querySelector("#stillEnough");
 var onlyFew=document.querySelector("#onlyFew");
 var options = {
   type: "regression",
-  debug: true
 };
 
 var modelDetails = {
