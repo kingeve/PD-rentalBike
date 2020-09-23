@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleIndex.css">
 
 
   <title>Bike Demand</title>
@@ -18,43 +18,43 @@
       waiting time. Eventually, providing the city with a stable supply of rental bikes becomes a major concern. The
       crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes.</p>
     <p>
-      <label for="day">Hour of the day: What time do you want to rent a bike? (0h~23h)</label></p>
-    <p><input type="text" id="day" name="day" placeholder="o'clock"></p>
+      Hour of the day: What time do you want to rent a bike? (0h~23h)</p>
+    <p><input type="text" name="day" placeholder="o'clock"></p>
     <p>
-      <label for="tmp">Temperature in Celsius: What is the temperature at the moment? (in Celsius)</label></p>
-    <p><input type="text" id="tmp" name="tmp" placeholder="°C">
+      Temperature in Celsius: What is the temperature at the moment? (in Celsius)</p>
+    <p><input type="text" name="tmp" placeholder="°C">
     </p>
     <p>
-      <label for="hmd">Humidity: How humid is it?</label></p>
-    <p><input type="text" id="hmd" name="hmd" placeholder="%">
+      Humidity: How humid is it?</p>
+    <p><input type="text" name="hmd" placeholder="%">
     </p>
 
     <p>
-      <label for="wind">Windspeed: what is the speed of wind?</label></p>
-    <p><input type="text" id="wind" name="wind" placeholder="m/s">
+      Windspeed: what is the speed of wind?</p>
+    <p><input type="text" name="wind" placeholder="m/s">
     </p>
     <p>
-      <label for="ssn">Seasons: What is the season?</label></p>
-    <select id="ssn" name="ssn">
+      Seasons: What is the season?</p>
+    <select name="ssn">
       <option value="1">Winter</option>
       <option value="2">Spring</option>
       <option value="3">Summer</option>
       <option value="4">Autumn</option>
     </select>
-    <p><label for="hld">Holiday: Is it a holiday?</label>
-    </p><select id="hld" name="hld">
+    <p>Holiday: Is it a holiday?
+    </p><select name="hld">
       <option value="0">No</option>
       <option value="1">Yes</option>
     </select>
     </p>
     <p>
-      <label for="fcd">Traffic hour: Is it a working hour? (from 9AM to 5PM)</label></p>
-    <p><select id="fcd" name="fcd">
+      Traffic hour: Is it a working hour? (from 9AM to 5PM)</p>
+    <p><select name="fcd">
         <option value="1">Yes</option>
         <option value="0">No</option>
       </select></p>
     <p>
-      <input type="submit" id="sub" value="Submit">
+      <input type="submit" value="Submit">
       </input></p>
   </form>
 </body>
