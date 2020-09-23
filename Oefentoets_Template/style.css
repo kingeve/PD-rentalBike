@@ -20,6 +20,7 @@ body {
 
 #bodyIndex{
   display: block;
+    margin: 30px;
 }
 
 .hidden {
