@@ -25,7 +25,6 @@ var inputs = {
   FunctioningDay:
 }
 
-console.log(inputs);
 
 function predict() {
   neuralNetwork.predict(inputs, function (err, results) {
