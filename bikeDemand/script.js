@@ -20,7 +20,7 @@ var neuralNetwork = ml5.neuralNetwork(options);
 neuralNetwork.load(modelDetails, predict);
 
 var inputs = {
-  Hour: parseInt(parameters.get('day')),
+  Hour: parseInt(parameters.get('hour')),
   TemperatureC: parseFloat(parameters.get('tmp')),
   Humidity: parseInt(parameters.get('hmd')),
   WindSpeed: parseFloat(parameters.get('wind')),
