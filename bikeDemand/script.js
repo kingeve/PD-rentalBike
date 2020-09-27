@@ -62,7 +62,7 @@ function predict() {
     
 
     rentalBikes.innerHTML = results[0].value.toFixed(0);
-    slider.style.height = results[0].value.toFixed(0) / 6 + "px";
+    slider.style.height = results[0].value.toFixed(0) / 12 + "px";
     slider.innerHTML = results[0].value.toFixed(0);
   });
 }
